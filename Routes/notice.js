@@ -42,7 +42,7 @@ router.post('/', async(req, res) => {
         const saveNotice = await noticeData.save();
         res.status(201).json(saveNotice);
     } catch (error) {
-        res.status(404).json({message: error});
+        res.status(400).json({message: error});
     }
 });
 
