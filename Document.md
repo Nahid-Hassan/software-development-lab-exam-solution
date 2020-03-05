@@ -6,8 +6,9 @@ Node.js web application 'department' where we will be building a Node.js RESTful
 
 ## Questions Collection [/questions]
 
-### List All Questions [GET]
-+ Headers
+### List All Notice [GET]
++ Request
+	+ Headers
 
             Location: /department/notice/
 
@@ -31,22 +32,22 @@ Node.js web application 'department' where we will be building a Node.js RESTful
             }
         ]
 
-### Create a New Question [POST]
+### Create a New Notice [POST]
 
 You may create your own question using this action. It takes a JSON
 object containing a question and a collection of answers in the
 form of choices.
-
-+ Headers
++ Request
+	+ Headers
 
             Location: /department/notice/
 
-+ Request (application/json)
+	+ Body (application/json)
 
-        {
-	        "subject": "Yearly picnic",
-	        "description": "Dear all the students in department of Computer Science and Engineering, we will inform you to our Yearly Picnic-2020 is held very soon. Fee 700/= Taka"
-        }
+        	{
+	        	"subject": "Yearly picnic",
+	        	"description": "Dear all the students in department of Computer Science and Engineering, we will 				inform you to our Yearly Picnic-2020 is held very soon. Fee 700/= Taka"
+        	}
 
 + Response 201 (application/json)
 
@@ -63,14 +64,14 @@ form of choices.
                 "date": "2020-03-04T08:21:47.634Z",
                 "__v": 0
             }
-## User Retrieve Update and Delete [/capmus/user/5e0cac88dd30799095c842f7]
+## User Retrieve Update and Delete [/department/notice/5e5f651b16c8411f866c3a34]
 
 ### Get single User [GET]
-   + Headers
++ Headers
 
             Location: /department/notice/5e5f651b16c8411f866c3a34
 
-    + Body
++ Response 201 (application/json)
 
             {
                 "_id": "5e5f651b16c8411f866c3a34",
