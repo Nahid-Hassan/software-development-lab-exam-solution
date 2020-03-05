@@ -4,7 +4,7 @@ HOST: https://polls.apiblueprint.org/
 # Department-Notice Board
 Node.js web application 'department' where we will be building a Node.js RESTful API for creating, updating, retrieving and deleting notice
 
-## Questions Collection [/questions]
+## Notice Collection 
 
 ### List All Notice [GET]
 + Request
@@ -64,7 +64,6 @@ form of choices.
                 "date": "2020-03-04T08:21:47.634Z",
                 "__v": 0
             }
-## User Retrieve Update and Delete [/department/notice/5e5f651b16c8411f866c3a34]
 
 ### Get single User [GET]
 + Headers
@@ -114,6 +113,10 @@ object containing update user information.
 
 You may delete a user using this action.
 
++ Request (application/json)
+    + Headers
+
+            Location: /department/notice/5e5f651b16c8411f866c3a34
 
 + Response 200 (application/json)
 
